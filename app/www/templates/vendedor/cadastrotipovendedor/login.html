@@ -1,0 +1,35 @@
+<ion-view view-title="Vendedor" align-title="center" class="login-vendedor">    
+    <ion-content overflow-scroll=true>
+        <div class="view-top-bar">            
+            <div class="row top-button">
+                <button class="button button-clear col col-50" ng-click="goCadastrar()">Cadastrar</button>
+                <button class="button button-clear col col-50 activate">Fazer Login</button>
+            </div>
+            <div class="bg-img-top-car">
+                <h3 class="title">Faça o seu login e comece a vender!</h3>
+            </div>            
+        </div>
+        <div class="screen-content">
+            <div class="form-vendedor-login">
+                <form name="form-vendedor-login">                    
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="E-MAIL*">
+                            </label>
+                        </div>
+                        <div class="row">                            
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="SENHA*">
+                            </label>
+                        </div>
+                        <div class="col">
+                            <a class="link" ui-sref="app.esquecisenha">Esqueci a minha senha</a>
+                        </div>
+                    </div> 
+                    <button class="button button-block button-balanced" ng-click="openModalBoasVindas();saleLogin();">Entrar</button>
+                </form>
+            </div>            
+        </div>         
+    </ion-content>
+</ion-view>

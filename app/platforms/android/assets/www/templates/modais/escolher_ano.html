@@ -1,0 +1,46 @@
+<ion-modal-view class="custom_modal custom_modal_ano">
+    <ion-header-bar class="bar bar-header bar-light">
+        <h1 class="title">Selecione o Ano</h1>        
+    </ion-header-bar>
+    <ion-content class="padding ano-modal">
+        <h3>Escolha período ou ano</h3>
+        <div class="content row">
+            <div class="content-left col col-50">
+                <div class="row spinner-container">
+                    <div class="col col-30">De</div> 
+                    <div class="spinner col col-70">
+                        <div class="spinner-top">></div>      
+                        <div class="spinner-content">
+                            <ion-scroll delegate-handle="scroller" id="scroll-home" direction="y" style="width: 100%;height: 100%" scrollbar-x="false" scrollbar-y="false">
+                                <ion-list ng-repeat=" item in years">
+                                    <div class="year" ng-class="$index == 1? 'active' : ''">{{item}}</div>
+                                </ion-list>
+                            </ion-scroll> 
+                        </div> 
+                        <div class="spinner-bottom"><</div>
+                    </div> 
+                </div>
+            </div>
+            <div class="content-rigth col col-50">
+                <div class="row spinner-container">
+                    <div class="col col-30">até</div> 
+                    <div class="spinner col col-70">
+                        <div class="spinner-top">></div>                    
+                        <div class="spinner-content">
+                            <ion-scroll delegate-handle="scroller-rigth" id="scroll-home" direction="y" style="width: 100%;height: 100%" scrollbar-x="false" scrollbar-y="false">
+                                <ion-list ng-repeat=" item in years">
+                                    <div class="year" ng-class="$index == 1? 'active' : ''">{{item}}</div>
+                                </ion-list>
+                            </ion-scroll> 
+                        </div> 
+                        <div class="spinner-bottom"><</div>
+                    </div> 
+                </div>
+            </div>
+        </div>        
+    </ion-content>
+    <div class="bar bar-footer row">
+        <button class="button button-clear stable col col-50" ng-click="modal_ano.hide()">Cancelar</button>
+        <button class="button icon-right ion-checkmark button-clear balanced col col-50" ng-click="confirmarModalAno()">Confirmar</button>
+    </div>
+</ion-modal-view>

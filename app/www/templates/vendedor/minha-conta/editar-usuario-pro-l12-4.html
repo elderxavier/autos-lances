@@ -1,0 +1,54 @@
+<ion-view view-title="Editar Usuário" align-title="center" class="cadastro-vendedor" id="editar-usuario-pro-l12-4">
+    <ion-nav-buttons side="left">
+        <button  menu-close class="button button-icon button-clear ion-android-arrow-back"  ng-click="backHistory()">
+        </button>
+    </ion-nav-buttons>
+    <ion-content overflow-scroll=true>
+        <div class="view-top-bar">            
+            <div class="bg-img-top-car">
+                <h3 class="title">Mantenha os cadastros <br>sempre atualizados</h3>
+            </div>            
+        </div>
+        <div class="screen-content">
+            <div class="form-vendedor-login">
+                <form name="form-vendedor-login">   
+                    <h2 class="col positive">Dados do Usuário</h2>
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col margin-right col-50 item-input item-stacked-label">
+                                <span class="input-label">Nome*</span>
+                                <input type="text" placeholder="Ana Maria" value="André">
+                            </label>
+                            <label class="item col  col-50 item-input item-stacked-label">
+                                <span class="input-label">Sobrenome*</span>
+                                <input type="text" placeholder="Braga" value="Viana">
+                            </label>
+                        </div>                        
+                    </div>
+                    <h2 class="col positive">Login</h2>
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">
+                                <span class="input-label">E-mail*</span>
+                                <input type="text" placeholder="john@suhr.com" value="emaildocliente@qualquercoisa.com.br">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">
+                                <span class="input-label">Senha*</span>
+                                <input type="text" placeholder="*******" value="*******">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">
+                                <span class="input-label">Repita a senha*</span>
+                                <input type="text" placeholder="*******" value="*******">
+                            </label>
+                        </div>
+                    </div>
+                    <button ui-sref="app.home" class="button button-block button-balanced">Confirmar</button>
+                </form>
+            </div>            
+        </div>         
+    </ion-content>
+</ion-view>

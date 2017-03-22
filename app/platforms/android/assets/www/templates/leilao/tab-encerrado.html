@@ -1,0 +1,153 @@
+<ion-view view-title="Meus Leilões" class="comprador-leilao" id="tab-encerrado">
+    <ion-nav-bar class="bar-positive" align-title="center">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear icon ion-navicon-round" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right">
+            <svg style="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="10px" width="30px" height="30px" viewBox="0 0 20 25" xml:space="preserve"><g transform="translate(-450 -1520)"><g xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="470,1538.586 460.808,1529.394 462.929,1527.272 458.686,1523.029 453.029,1528.686 457.272,1532.929     459.393,1530.808 468.586,1540   "></polygon><rect x="461.222" y="1519.737" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -942.0895 773.1823)" width="2" height="8.001"></rect><rect x="452.736" y="1528.222" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -950.5751 769.6673)" width="2" height="8"></rect></g></g></svg>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content overflow-scroll=true class=" encerrado">
+        <div class="card">
+            <div class="item item-text-wrap">
+                <div class="row">
+                    <div class="col ">
+                        <h2>Ford Fusion</h2>
+                        <h3>2013 a 2016 até 15.000 Km</h3>
+                    </div>
+                    <div class="col preco">
+                        <div>de <strong> R$ 49.000,00</strong></div>
+                        <div>até <strong> R$ 49.000,00</strong></div>
+                    </div>
+                </div>
+                <div class="item item-image">
+                    <div class="faixa-avaliacao" ui-sref="app.avaliar-vendedor-l101">Avalie Este Vendedor <i class="icon ion-chevron-right icon-right"></i></div>
+                    <img src="img/fusion.jpg"/>
+                    <div class="btn-round bg-positive" ng-click="viewDetailsCloseds[0] = !viewDetailsCloseds[0] ? true : false">
+                        <span ng-show="viewDetailsCloseds[0]"><i class="icon ion-chevron-up"></i></span>
+                        <span ng-show="!viewDetailsCloseds[0]"><i class="icon ion-chevron-down"></i></span>
+                    </div>
+                </div>
+                <div class="item item-details-wrap" ng-show="viewDetailsCloseds[0]">
+                    <div class="row first">
+                        <div class=" col">
+                            Criado em <strong>10/03/2016</strong> Encerrado em <strong>15/03/2016</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Valor</div>
+                        <div class=" col-67 right">R$ 50.000,00</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Pagamento</div>
+                        <div class=" col-67 right">ENTRADA + PARCELAMENTO</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Marca</div>
+                        <div class=" col-67 right">MARCA A</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Modelo</div>
+                        <div class=" col-67 right">MODELO B</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Ano de Fabricação</div>
+                        <div class=" col-67 right">2015 / 2016</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Quilometragem</div>
+                        <div class=" col-67 right">0KM</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Cor</div>
+                        <div class=" col-67 right">AZUL</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Localidade</div>
+                        <div class=" col-67 right">RJ (Rio de Janeiro) / RJ (Niterói)</div>
+                    </div>
+                    <div class="row last">
+                        <div class=" col-33 left">Opcionais</div>
+                        <div class=" col-67 right">BANCO DE COURO, FAROL <br>DE NEBLINA</div>
+                    </div>
+                </div>
+
+                <div class="row item">
+                    <button class="button btn-last-chance button-clear stable col " ui-sref="app.ativar-ultima-chance-l11">Última Chance</button>
+                    <button class="button btn-confirm icon-right col  ion-checkmark button-clear balanced" ui-sref="app.revisar-dados-ativar-leilao-l3">Refazer Leilão</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item item-text-wrap">
+                <div class="row">
+                    <div class="col ">
+                        <h2>Ford Fusion</h2>
+                        <h3>2013 a 2016 até 15.000 Km</h3>
+                    </div>
+                    <div class="col preco">
+                        <div>de <strong> R$ 49.000,00</strong></div>
+                        <div>até <strong> R$ 49.000,00</strong></div>
+                    </div>
+                </div>
+                <div class="item item-image">                    
+                    <img src="img/fusion.jpg"/>
+                    <div class="btn-round bg-positive" ng-click="viewDetailsCloseds[1] = !viewDetailsCloseds[1] ? true : false">
+                        <span ng-show="viewDetailsCloseds[1]"><i class="icon ion-chevron-up"></i></span>
+                        <span ng-show="!viewDetailsCloseds[1]"><i class="icon ion-chevron-down"></i></span>
+                    </div>
+                </div>
+                <div class="item item-details-wrap" ng-show="viewDetailsCloseds[1]">
+                    <div class="row first">
+                        <div class=" col">
+                            Criado em <strong>10/03/2016</strong> Encerrado em <strong>15/03/2016</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Valor</div>
+                        <div class=" col-67 right">R$ 50.000,00</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Pagamento</div>
+                        <div class=" col-67 right">ENTRADA + PARCELAMENTO</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Marca</div>
+                        <div class=" col-67 right">MARCA A</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Modelo</div>
+                        <div class=" col-67 right">MODELO B</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Ano de Fabricação</div>
+                        <div class=" col-67 right">2015 / 2016</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Quilometragem</div>
+                        <div class=" col-67 right">0KM</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Cor</div>
+                        <div class=" col-67 right">AZUL</div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-33 left">Localidade</div>
+                        <div class=" col-67 right">RJ (Rio de Janeiro) / RJ (Niterói)</div>
+                    </div>
+                    <div class="row last">
+                        <div class=" col-33 left">Opcionais</div>
+                        <div class=" col-67 right">BANCO DE COURO, FAROL <br>DE NEBLINA</div>
+                    </div>
+                </div>
+
+                <div class="row item">
+                    <button class="button btn-last-chance button-clear stable col " ui-sref="app.ativar-ultima-chance-l11">Última Chance</button>
+                    <button class="button btn-confirm icon-right col  ion-checkmark button-clear balanced" ui-sref="app.revisar-dados-ativar-leilao-l3">Refazer Leilão</button>
+                </div>
+            </div>
+        </div>
+        
+    </ion-content>
+</ion-view>

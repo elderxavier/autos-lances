@@ -1,0 +1,24 @@
+<ion-modal-view class="custom_modal modal-marca">
+    <ion-header-bar class="bar bar-header bar-light">
+        <h1 class="title">Selecione a marca</h1>        
+    </ion-header-bar>
+    <ion-content overflow-scroll=true class="padding">
+        <div class="content-itens">            
+            <ul class="radio-ps">
+                <li ng-repeat="marca in marcas">
+                    <div class="row">
+                        <input type="radio" ng-model="campos.marca_selecionada" value="{{marca.id}}" name="marca_selecionada" id="{{marca.id}}" />
+                        <label for="{{marca.id}}">{{marca.name}}</label>
+                        <div class="check">
+                            <div class="checked"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer row">
+      <button class="button button-clear stable col col-50" ng-click="modal_marca.hide()">Cancelar</button>
+      <button class="button icon-right ion-checkmark button-clear balanced col col-50 confirm hidden" ng-click="confirmarModalMarca()">Confirmar</button>
+    </div>
+</ion-modal-view>

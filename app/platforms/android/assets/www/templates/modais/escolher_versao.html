@@ -1,0 +1,40 @@
+<ion-modal-view class="custom_modal">
+    <ion-header-bar class="bar bar-header bar-light">
+        <h1 class="title">Selecione a Versão</h1>
+        <button class="button button-clear button-primary stable" ng-click="clearItens($event)">Limpar</button>
+    </ion-header-bar>
+    <ion-content overflow-scroll=true class="padding versao-modal">
+        <div class="content-itens">
+            <ul class="checkbox">
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">1.0</label>
+                    </div> 
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">1.4</label>
+                    </div>
+                </li>
+                <li>                
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">1.6</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">2.0</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+                </ion-content>
+    <div class="bar bar-footer row">
+      <button class="button button-clear stable col col-50" ng-click="modal_versao.hide()">Cancelar</button>
+      <button class="button icon-right ion-checkmark button-clear balanced col col-50 confirm hidden" ng-click="confirmarModalVersao()">Confirmar</button>
+    </div>
+</ion-modal-view>

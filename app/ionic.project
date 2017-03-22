@@ -1,0 +1,12 @@
+{
+  "name": "AutoLanceApp",
+  "app_id": "2238ebd6",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

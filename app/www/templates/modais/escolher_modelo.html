@@ -1,0 +1,24 @@
+<ion-modal-view class="custom_modal modal-modelo">
+    <ion-header-bar class="bar bar-header bar-light">
+        <h1 class="title">Selecione o modelo</h1>        
+    </ion-header-bar>
+    <ion-content overflow-scroll=true class="padding">        
+        <div class="content-itens">            
+            <ul class="radio-ps">
+                <li ng-repeat="modelo in modelos">
+                    <div class="row">
+                        <input type="radio" ng-model="modelo_selecionado" name="modelo_selecionado" id="{{modelo.id}}" />
+                        <label for="{{modelo.id}}">{{modelo.name}}</label>
+                        <div class="check">
+                            <div class="checked"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer row">
+        <button class="button button-clear stable col col-50" ng-click="modal_modelo.hide()">Cancelar</button>
+        <button class="button icon-right ion-checkmark button-clear balanced col col-50 confirm hidden" ng-click="confirmarModalModelo()">Confirmar</button>
+    </div>
+</ion-modal-view>

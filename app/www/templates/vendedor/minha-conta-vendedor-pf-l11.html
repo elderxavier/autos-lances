@@ -1,0 +1,139 @@
+<ion-view view-title="Minha Conta" class="vendedor cadastro-vendedor" id="minha-conta-vendedor-pf-l11">
+    <ion-content class="animate-fade-slide-in"> 
+        <div class="view-top-bar">
+            <div class="row top-button">
+                <button class="button button-clear col col-50 activate">Minhas Informações</button>
+                <button class="button button-clear col col-50">Informações dos usuarios</button>
+            </div>
+            <div class="bg-img-top-car">
+                <h3 class="alter-title">Mantenha sempre o seu cadastroo atualizado</h3>
+            </div>            
+        </div>
+        <div class="screen-content">
+            <div class="content-top">
+                <div class="content-top-container">
+                    <div class="row border-t">
+                        <div class="col col-50 left">
+                            <h3>PLANO PRO 1</h3>
+                        </div>
+                        <div class="col col-50 right">
+                            <div class="btn-round bg-positive" ng-click="showItensL11()"><span>+</span></div>
+                        </div>
+                    </div>
+                    <div class="itens">
+                        <div class="row first">
+                            <div class="col col-80">
+                                <p>Meus leilões em andamento</p>
+                            </div>
+                            <div class="col col-20">
+                                <span>18</span>
+                            </div>
+                        </div>
+                        <div class="row last">
+                            <div class="col col-80">
+                                <p>Saldo de Leiloes</p>
+                            </div>
+                            <div class="col col-20">
+                                <span><strong>05</strong></span>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="form-vendedor particular">
+                <form name="form-vendedor-particular">
+                    <h2 class="col positive ">Informações Pessoais</h2>
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col margin-right col-50 item-input item-stacked-label"> 
+                                <span class="input-label">Nome*</span>
+                                <input type="text" placeholder="NOME*" value="Ana Maria">
+                            </label>
+                            <label class="item col  col-50 item-input item-stacked-label">
+                                <span class="input-label">SOBRENOME*</span>
+                                <input type="text" placeholder="SOBRENOME*" value="Braga">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col  item-input item-stacked-label"> 
+                                <span class="input-label">CPF*</span>
+                                <input type="text" placeholder="CPF*" value="050.044.335/34">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-30 item-input item-stacked-label"> 
+                                <span class="input-label">DDD*</span>
+                                <input type="text" placeholder="DDD*" value="21">
+                            </label>
+                            <label class="item col col-70 item-input item-stacked-label">  
+                                <span class="input-label">TELEFONE*</span>
+                                <input type="text" placeholder="TELEFONE*" value="94885 - 0908">
+                            </label>
+                        </div>
+                    </div>
+                    <h2 class="col positive">Endereço</h2>                            
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label"> 
+                                <span class="input-label">CEP*</span>
+                                <input type="text" placeholder="CEP*" value="22231-090">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-30 item-input item-stacked-label"> 
+                                <span class="input-label">UF*</span>
+                                <input type="text" placeholder="UF*" value="RJ">
+                            </label>
+                            <label class="item col col-70 item-input item-stacked-label"> 
+                                <span class="input-label">CIDADE*</span>
+                                <input type="text" placeholder="CIDADE*" value="Rio de Janeiro">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">
+                                <span class="input-label">BAIRRO*</span>
+                                <input type="text" placeholder="BAIRRO*" value="Barra da Tijuca">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">
+                                <span class="input-label">ENDEREÇO*</span>
+                                <input type="text" placeholder="ENDEREÇO*" value="Avenida das Américas">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-30 item-input item-stacked-label">
+                                <span class="input-label">NUMERO*</span>
+                                <input type="text" placeholder="NUMERO*" value="5000">
+                            </label>
+                            <label class="item col col-70 item-input item-stacked-label">
+                                <span class="input-label">COMPLEMENTO</span>
+                                <input type="text" placeholder="COMPLEMENTO" value="3463466">
+                            </label>
+                        </div>
+                    </div>
+                    <h2 class="col positive">Login</h2>                            
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">
+                                <span class="input-label">E-MAIL*</span>
+                                <input type="text" placeholder="E-MAIL*" value="emaildocliente@qualquercoisa.com.br">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-50 item-input item-stacked-label senha">
+                                <span class="input-label">SENHA*</span>
+                                <input type="password" placeholder="SENHA*" value="*********">
+                            </label>
+                            <label class="item col col-50 item-input item-stacked-label">
+                                <span class="input-label">CONFIRMAR SENHA*</span>
+                                <input type="password" placeholder="CONFIRMAR SENHA*" value="*********  ">
+                            </label>
+                        </div>
+                    </div>                        
+                    <button ui-sref="app.home-l2" class="button button-block button-balanced">Salvar</button>
+                </form>
+            </div>                
+        </div>
+    </ion-content>
+</ion-view>

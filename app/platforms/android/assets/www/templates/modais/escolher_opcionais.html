@@ -1,0 +1,64 @@
+<ion-modal-view class="custom_modal">
+    <ion-header-bar class="bar bar-header bar-light">
+        <h1 class="title">Opcionais</h1>
+        <button class="button button-clear button-primary stable" ng-click="clearItens($event)">Limpar</button>
+    </ion-header-bar>
+    <ion-content overflow-scroll=true class="padding opcionais-modal">
+        <div class="content-itens">
+            <ul class="checkbox">
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Ar Condicionado</label>
+                    </div> 
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Direcao Hidraulica</label>
+                    </div>
+                </li>
+                <li>                
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Bancos de Couro</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Rodas de liga</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Alarme</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Ipva 2016 Pago</label>
+                    </div>              
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Trio Eletrico (vidros,trava,espelho)</label>
+                    </div>              
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Tapetes</label>
+                    </div>              
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer row">
+        <button class="button button-clear stable col col-50" ng-click="modal_opcionais.hide()">Cancelar</button>
+        <button class="button icon-right ion-checkmark button-clear balanced col col-50" ng-click="confirmarModalOpcionais()">Confirmar</button>
+    </div>
+</ion-modal-view>

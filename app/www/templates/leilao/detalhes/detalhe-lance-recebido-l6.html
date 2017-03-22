@@ -1,0 +1,209 @@
+<ion-view view-title="Meus Leilões" class="detalhe-lance-recebido-l6" id="detalhe-lance-recebido-l6">
+    <ion-nav-bar class="bar-positive" align-title="center">
+        <ion-nav-buttons side="left">
+            <button  menu-close class="button button-icon button-clear ion-android-arrow-back"  ng-click="backHistory()">
+            </button>
+        </ion-nav-buttons>        
+    </ion-nav-bar>
+
+    <ion-content overflow-scroll=true class=" encerrado">
+        <div class="screen-content">
+            <div class="content-top">
+                <div class="row slide-top">
+                    <button class="button icon-left col col-10 button-clear positive ion-chevron-left"></button>
+                    <div class="itens col">                        
+                        <p>LANCE #32</p>
+                    </div>                    
+                    <button class="button icon-right col col col-10 button-clear positive ion-chevron-right"></button>
+                </div>
+
+                <div class="card">
+                    <div class="slideshow-container">
+                        <div class="slideshow fade">                    
+                            <img src="img/fusion.jpg">                        
+                        </div>
+
+                        <div class="slideshow fade">                    
+                            <img src="img/fusion-invert.jpg">
+                        </div>
+
+                        <div class="slideshow fade">                    
+                            <img src="img/fusion.jpg">                        
+                        </div>
+
+                        <div class="slideshow fade">                    
+                            <img src="img/fusion-invert.jpg">                        
+                        </div>
+                        <div class="slideshow fade">                    
+                            <img src="img/fusion.jpg">                        
+                        </div>
+                        <div class="slideshow fade">                    
+                            <img src="img/fusion-invert.jpg">                        
+                        </div>
+                        <div class="dot-container">
+                            <span class="dot" ng-click="currentSlide(1)"></span> 
+                            <span class="dot" ng-click="currentSlide(2)"></span> 
+                            <span class="dot" ng-click="currentSlide(3)"></span> 
+                            <span class="dot" ng-click="currentSlide(4)"></span> 
+                            <span class="dot" ng-click="currentSlide(5)"></span> 
+                            <span class="dot" ng-click="currentSlide(6)"></span> 
+
+                        </div>
+                    </div>
+                    <div class="row bottom-itens">
+                        <div class="col col-50 left">
+                            <p>Tipo de vendedor:</p>
+                        </div>
+                        <div class="col col-50 right">
+                            <p>Loja/Concessionária</p>
+                        </div>
+                    </div>
+                    <div class="row bottom-itens last">
+                        <div class="col col-60 left">
+                            <p>Avaliação do vendedor</p>
+                        </div>
+                        <div class="col col-40 right">
+                            <ul class="avaliate">
+                                <li class="active"> <span></span></li>
+                                <li class="active"> <span></span></li>
+                                <li class="active"> <span></span></li>
+                                <li> <span></span></li>
+                                <li> <span></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card last">
+                    <h3 class="title">O QUE ACHOU DESSE LANCE?</h3>
+                    <div class="row">
+                        <div class="col col-25">
+                            <button class="button button-clear icon fa fa-thumbs-up"><span>CURTI</span></button>
+                        </div>
+                        <div class="col col-25">
+                            <button class="button button-clear icon fa fa-thumbs-down active"><span>NÃO CURTI</span></button>
+                        </div>
+                        <div class="col col-25">
+                            <button class="button button-clear icon fa fa fa-question"><span>TALVEZ</span></button>
+                        </div>
+
+                        <div class="col col-25 four">
+                            <button class="button button-clear icon fa fa-star"><span>FAVORITO</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-center">
+                <h3>Descrição do Lance</h3>
+                <div class="row first">
+                    <div class="col col-50 left">
+                        <p>Valor</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p><strong>R$ 53.000,<span>00</span></strong></p>                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-50 left">
+                        <p>Marca</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p>MARCA A<i class="fa-pscheck"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-50 left">
+                        <p>Modelo</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p>MODELO B<i class="fa-pscheck"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-50 left">
+                        <p>Ano de Fabricação</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p>2015 / 2016<i class="fa-pscheck"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-50 left">
+                        <p>Quilometragem</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p>0KM<i class="fa-psuncheck"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-50 left">
+                        <p>Cor</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p>AZUL<i class="fa-psuncheck"></i></p>
+                    </div>
+                </div>
+                <div class="row last">
+                    <div class="col col-50 left">
+                        <p>Pagamento</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p>À VISTA<i class="fa-pscheck"></i></p>
+                    </div>
+                </div>
+                <h3>Acessórios Solicitados</h3>
+                <div class="row first">
+                    <div class="col col-50 left">
+                        <p>Banco de couro</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p><i class="fa-psuncheck"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-50 left">
+                        <p>Som automotivo</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p><i class="fa-pscheck"></i></p>
+                    </div>
+                </div>                
+                <div class="row last">
+                    <div class="col col-50 left">
+                        <p>Ar condicionado</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p><i class="fa-psuncheck"></i></p>
+                    </div>
+                </div>
+                <h3>Outros Acessórios e Cortesias</h3>
+                <div class="row first">
+                    <div class="col col-50 left">
+                        <p>Farol de milha</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p><i class="fa-pscheck"></i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-50 left">
+                        <p>IPVA Pago</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p><i class="fa-pscheck"></i></p>
+                    </div>
+                </div>                
+                <div class="row last">
+                    <div class="col col-50 left">
+                        <p>Tanque cheio</p>
+                    </div>
+                    <div class="col col-50 right">
+                        <p><i class="fa-pscheck"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-bottom">
+                <button ui-sref="app.lances-vencedores-l7" class="button button-block button-balanced" href="#/app/escolhercarrodetalhes">Bater o Martelo</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

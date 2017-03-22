@@ -1,0 +1,30 @@
+<ion-view view-title="Login" class="login-user">
+    <ion-nav-buttons side="left">
+        <button  menu-close class="button button-icon button-clear ion-android-arrow-back"  ng-click="backHistory()">
+        </button>
+    </ion-nav-buttons> 
+    <ion-content overflow-scroll=true>
+        <div class="bg-img-top-car">
+            <h3 class="alter-title">Esqueci a minha senha</h3>
+        </div> 
+        <div class="screen-content padding">
+            <div class="row responsive-sm">
+                <div class="col">
+                    <p style="margin: 0px;">Digite o <strong class="positive">E-Mail de Cadastro</strong> que nós enviaremos as instruções para cadastrar uma nova senha.
+                    </p>
+                </div>
+                <div class="list row responsive-sm login-form">
+                    <div class="row">
+                        <label class="item col item-input item-stacked-label senha">
+                            <input type="text" placeholder="E-MAIL DE CADASTRO" required>
+                            <span class="input-label">E-MAIL DE CADASTRO</span>
+                        </label>
+                    </div>
+                </div>                   
+            </div>
+            <div class="padding">
+                <button  ui-sref="app.novasenha" class="button button-block button-balanced">Enviar</button>
+            </div>
+        </div>        
+    </ion-content>
+</ion-view>

@@ -1,0 +1,223 @@
+<ion-view view-title="Vendedor" class="vendedor cadastro-vendedor">
+    <ion-content class="animate-fade-slide-in"  ng-controller="CadastroVendedorCtrl">          
+        <div class="view-top-bar">            
+            <div class="row top-button">
+                <button class="button button-clear col col-50 activate">Cadastrar</button>
+                <button class="button button-clear col col-50" ng-click="goLogin()">Fazer Login</button>
+            </div>
+            <div class="bg-img-top-car">
+                <h3 class="alter-title">Qual é o seu perfil como vendedor?</h3>
+            </div>
+            <div class="row radio-ps">
+                <div class="col col-50">                                
+                    <input type="radio" name="vendedor-tipo" value="1"/>
+                    <label for="cidade1">Particular</label>
+                    <div class="check">
+                        <div class="checked"></div>
+                    </div>
+                </div>                            
+                <div class="col col-50"> 
+                    <input type="radio" name="vendedor-tipo" value="2"/>
+                    <label for="cidade1">Loja ou Concessionária</label>
+                    <div class="check">
+                        <div class="checked"></div>
+                    </div>
+                </div>                        
+            </div>
+        </div>
+        <div class="screen-content">
+            <div class="form-vendedor particular hidden">
+                <form name="form-vendedor-particular">
+                    <h2 class="col positive ">Informações Pessoais</h2>
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col margin-right col-50 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="NOME*">
+                            </label>
+                            <label class="item col  col-50 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="SOBRENOME*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col  item-input item-stacked-label">                                        
+                                <input type="text" placeholder="CPF*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-30 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="DDD*">
+                            </label>
+                            <label class="item col col-70 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="TELEFONE*">
+                            </label>
+                        </div>
+                    </div>
+                    <h2 class="col positive">Endereço</h2>                            
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="CEP*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-30 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="UF*">
+                            </label>
+                            <label class="item col col-70 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="CIDADE*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="BAIRRO*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="ENDEREÇO*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-30 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="NUMERO*">
+                            </label>
+                            <label class="item col col-70 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="COMPLEMENTO">
+                            </label>
+                        </div>
+                    </div>
+                    <h2 class="col positive">Login</h2>                            
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="E-MAIL*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-50 item-input item-stacked-label senha">                                        
+                                <input type="text" placeholder="SENHA*">
+                            </label>
+                            <label class="item col col-50 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="CONFIRMAR SENHA*">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkbox termos">
+                        <div class="row">
+                            <input type="checkbox" name="termo"/>
+                            <p>Li e aceito os <span ng-click="goTermoUso()"> TERMOS DE USO </span> e <span ng-click="goPolitica()">POLÍTICA DE PRIVACIDADE</span></p>
+                        </div> 
+                    </div>
+                    <button class="button button-block button-balanced" ng-click="openModalBoasVindas();saleLogin();">Salvar</button>
+                </form>
+            </div>
+
+            <div class="form-vendedor lojista hidden">
+                <form name="form-vendedor-lojista">
+                    <h2 class="col positive ">Informações do Responsável</h2>
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col margin-right col-50 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="NOME*">
+                            </label>
+                            <label class="item col  col-50 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="SOBRENOME*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col  item-input item-stacked-label">                                        
+                                <input type="text" placeholder="CPF*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-30 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="DDD*">
+                            </label>
+                            <label class="item col col-70 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="TELEFONE*">
+                            </label>
+                        </div>
+                    </div>
+                    <h2 class="col positive ">Dados Loja/Concessionária</h2>
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col margin-right col-50 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="NOME FANTASIA**">
+                            </label>
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="CNPJ*">
+                            </label>
+                        </div>                            
+                        <div class="row">
+                            <label class="item col col-30 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="DDD*">
+                            </label>
+                            <label class="item col col-70 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="TELEFONE*">
+                            </label>
+                        </div>
+                    </div>
+
+                    <h2 class="col positive">Endereço</h2>                            
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="CEP*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-30 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="UF*">
+                            </label>
+                            <label class="item col col-70 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="CIDADE*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="BAIRRO*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="ENDEREÇO*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-30 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="NUMERO*">
+                            </label>
+                            <label class="item col col-70 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="COMPLEMENTO">
+                            </label>
+                        </div>
+                    </div>
+                    <h2 class="col positive">Login</h2>                            
+                    <div class="list row responsive-sm login-form">
+                        <div class="row">
+                            <label class="item col item-input item-stacked-label">                                        
+                                <input type="text" placeholder="E-MAIL*">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="item col col-50 item-input item-stacked-label senha">                                        
+                                <input type="text" placeholder="SENHA*">
+                            </label>
+                            <label class="item col col-50 item-input item-stacked-label">                                        
+                                <input type="text" placeholder="CONFIRMAR SENHA*">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkbox termos">
+                        <div class="row">
+                            <input type="checkbox" name="termo"/>
+                            <p>Li e aceito os <span ng-click="goTermoUso()"> TERMOS DE USO </span> e <span ng-click="goPolitica()">POLÍTICA DE PRIVACIDADE</span></p>
+                        </div> 
+                    </div>
+                    <button class="button button-block button-balanced" ng-click="openModalBoasVindas();saleLogin();">Salvar</button>
+                </form>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

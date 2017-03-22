@@ -1,0 +1,114 @@
+<ion-view view-title="CONFIRMAR LEILÃO" id="revisar-dados-ativar-leilao-l3">
+    <ion-nav-buttons side="left">
+        <button  menu-close class="button button-icon button-clear ion-android-arrow-back"  ng-click="backHistory()">
+        </button>
+    </ion-nav-buttons> 
+    <ion-content class="animate-fade-slide-in"  ng-controller="CadastroVendedorCtrl">        
+        <div class="view-top-bar">               
+            <div class="bg-img-top-cl001">
+                <h3 class="title">Revise os dados <br> do seu Leilão</h3>                
+                <div class="row">                    
+                    <div class="col  right">
+                        <div class="btn-round bg-positive" ui-sref="app.escolhercarro"><span><i class="icons-itens fa-pspencil"></i></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen-content">
+            <div class="content-top">
+                <div class="row">
+                    <div class="col col-33 left">
+                        Marca
+                    </div>
+                    <div class="col col-67 right">
+                        FORD
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col col-33 left">
+                        Modelo
+                    </div>
+                    <div class="col col-67 right">
+                        FIESTA
+                    </div>                    
+                </div>
+
+                <div class="row">
+                    <div class="col col-20 left">
+                        Opcionais
+                    </div>
+                    <div class="col col-80 right">
+                        ALARME, BANCO DE COURO, <br>DIREÇÃO HIDRÁULICA, AR CONDICIONADO 
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col col-33 left">
+                        Cor
+                    </div>
+                    <div class="col col-67 right">
+                        VERMELHO
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col col-33 left">
+                        Ano
+                    </div>
+                    <div class="col col-67 right">
+                        2013 até 2016
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col col-33 left">
+                        Quilometragem
+                    </div>
+                    <div class="col col-67 right">
+                        até 15.000 Km
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col col-33 left">
+                        Localidades
+                    </div>
+                    <div class="col col-67 right">
+                        RJ - RIO DE JANEIRO / NITERÓI
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col col-33 left">
+                        Duração do Leilão 
+                    </div>
+                    <div class="col col-67 right">
+                        3 (TRÊS) DIAS 
+                    </div>                    
+                </div>
+                <div class="row last">
+                    <div class="col col-33 left">
+                        Finalizará em 
+                    </div>
+                    <div class="col col-67 right">
+                        15/03/2016 (TERÇA-FEIRA)
+                    </div>                    
+                </div>
+            </div>
+            <div class="content-center">
+                <div class="row first">
+                    <p>PREÇO OBJETIVO</p>
+                </div>
+                <div class="row last">
+                    <p>R$ 53.000</p>
+                </div>
+            </div>
+            <div class="content-bottom">                
+                <div class="row checkbox">
+                    <div class="col col-80">
+                        <input type="checkbox" name="carro">
+                        <label for="carro">Pretendo dar o meu carro como parte do pagamento</label>
+                    </div>                                    
+                </div>
+            </div>
+        </div> 
+        <div class="padding">
+            <button class="button button-block button-balanced" ui-sref="app.meusleiloes.andamento">Confirmar Leilão</button>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,73 @@
+<ion-modal-view class="custom_modal">
+    <ion-header-bar class="bar bar-header bar-light">
+        <h1 class="title">SELECIONE AS CIDADES</h1>   
+        <button class="button button-clear button-primary stable" ng-click="clearItens($event)">Limpar</button>
+    </ion-header-bar>
+    <ion-content overflow-scroll=true class="padding cidade-modal">
+        <h3>Rio de Janeiro</h3> 
+        <div class="vendedor">
+            <span>374</span>
+            vendedores
+        </div>  
+        <div class="content-itens">
+            <ul class="checkbox">
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Barra do Pirai</label>
+                        <div class="chip right">
+                            <span>4</span>                           
+                        </div>
+                    </div> 
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Buzios</label>
+                        <div class="chip right">
+                            <span>28</span>                           
+                        </div>
+                    </div>
+                </li>
+                <li>                
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Marica</label>
+                        <div class="chip right">
+                            <span>32</span>                           
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Niteroi</label>
+                        <div class="chip right">
+                            <span>98</span>                           
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Rio de Janeiro</label>
+                        <div class="chip right">
+                            <span>132</span>                           
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <input type="checkbox" name="cidade1"/>
+                        <label for="cidade1">Teresopolis</label><div class="chip right">
+                            <span>65</span>                           
+                        </div>
+                    </div>              
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer row">
+        <button class="button button-clear stable col col-50" ng-click="modal_cidade.hide()">Cancelar</button>
+        <button class="button icon-right ion-checkmark button-clear balanced col col-50 confirm hidden" ng-click="confirmarModalCidade()">Confirmar</button>
+    </div>
+</ion-modal-view>

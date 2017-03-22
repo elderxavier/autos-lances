@@ -1,0 +1,16 @@
+<ion-view hide-nav-bar="true" id="home">
+    <ion-content class="contentHome">
+        <div class="item-image">
+            <img src="./img/logo_home.png">
+        </div>
+        <div class="content-top padding" ng-show="!userlogin">
+            <button ui-sref="app.escolhercarro" class="button button-block button-calm first">Quero Comprar</button>
+            <button ui-sref="app.cadastrotipovendedor" class="button button-block button-balanced last">Quero Vender</button>
+        </div>
+        <div class="content-bottom padding" ng-show="userlogin">
+            <button ui-sref="app.escolhercarro" class="button button-block button-balanced first">Criar Leilão</button>
+            <button ui-sref="app.meusleiloes.andamento" class="button button-block button-calm center">Meus Leilões</button>
+            <button ui-sref="app.comodidade" class="button button-block button-calm first">Comodidades</button>            
+        </div>        
+    </ion-content>
+</ion-view>

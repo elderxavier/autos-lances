@@ -1,0 +1,117 @@
+<ion-view view-title="MEU LEILÃO EM ANDAMENTO" class="vendedor andamento-leilao">
+    <ion-nav-buttons side="left">
+        <button  menu-close class="button button-icon button-clear ion-android-arrow-back"  ng-click="backHistory()">
+        </button>
+    </ion-nav-buttons> 
+    <ion-content class="animate-fade-slide-in"  ng-controller="CadastroVendedorCtrl">        
+        <div class="view-top-bar">               
+            <div class="bg-img-top-car2">
+                <h3 class="title">Ford Fusion Vermelho</h3>
+                <div class="row">                    
+                    <div class="col col-33">
+                        <div class="chip-al chip-al-s padding-horizontal ">
+                            <span class="bg-balanced"></span>Leilão ativo
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-67">
+                        <p><strong>2013</strong> a <strong>2016</strong> até <strong>15.000</strong> km</p>
+                    </div>
+                </div>
+                <div class="row">                    
+                    <div class="col  right">
+                        <div class="btn-round bg-positive" ng-click="showItensL91()"><span>+</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen-content">
+            <div class="content-top">
+                <div class="row chip-contaiiner">
+                    <div class="col">
+                        <div class="row">
+                            <div class="chip-al-g chip-al padding-horizontal">32</div>
+                        </div>
+                        <div class="row">
+                            <p>Lances Recebidos</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="chip-al-g chip-al padding-horizontal bg-balanced">4d 9:25h</div>
+                        </div>
+                        <div class="row">
+                            <p>para o fim do leilão</p>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <div class="content-center">
+                <p><strong>SEU LANCE ATUAL</strong></p>
+                <div class="row">
+                    <div class="col col-40 first">
+                        <p>R$ 53.000,<span>00</span></p>
+                    </div>
+                    <div class="col col-20">
+                        <p>2015</p>
+                    </div>
+                    <div class="col col-20">
+                        <p>14.500</p>
+                    </div>
+                    <div class="col col-20">
+                        <button menu-close="" class="button-icon button-clear ion-android-arrow-forward"> </button>
+                    </div>
+                </div>
+                <button ui-sref="app.escolhercarrodetalhes" class="button button-block button-balanced" href="#/app/escolhercarrodetalhes">Novo Lance</button>
+            </div>
+            <div class="content-bottom">
+                <h3>Lances Concorrentes</h3>
+                <div class="row">                    
+                    <div class="col col-50 left">
+                        <div class="styled-select col bg-positive rounded">
+                            <select>
+                                <option value="filtrar">Filtrar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col col-50 right">
+                        <div class="styled-select col bg-positive rounded">
+                            <select>
+                                <option value="ordenar">Ordenar</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-40 first">
+                        <p>R$ 53.000,<span>00</span></p>
+                    </div>
+                    <div class="col col-20">
+                        <p>2015</p>
+                    </div>
+                    <div class="col col-20">
+                        <p>14.500</p>
+                    </div>
+                    <div class="col col-20">
+                        <button menu-close="" class="button-icon button-clear ion-android-arrow-forward"> </button>
+                    </div>
+                </div>                
+                <div class="row">
+                    <div class="col col-40 first">
+                        <p>R$ 58.000,<span>00</span></p>
+                    </div>
+                    <div class="col col-20">
+                        <p>2015</p>
+                    </div>
+                    <div class="col col-20">
+                        <p class="chip">ZERO KM</p>
+                    </div>
+                    <div class="col col-20">
+                        <button menu-close="" class="button-icon button-clear ion-android-arrow-forward"> </button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </ion-content>
+</ion-view>

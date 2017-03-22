@@ -1,0 +1,67 @@
+<ion-view view-title="AVALIACAO DO VENDEDOR" class="comprador avaliar-vendedor">
+    <ion-nav-buttons side="left">
+        <button  menu-close class="button button-icon button-clear ion-android-arrow-back"  ng-click="backHistory()">
+        </button>
+    </ion-nav-buttons> 
+    <ion-content class="animate-fade-slide-in"  ng-controller="CadastroVendedorCtrl">        
+        <div class="view-top-bar">               
+            <div class="bg-img-top-details">
+                <h3 class="title">Avalie agora o seu vendedor</h3>
+            </div>
+        </div>
+        <div class="screen-content">
+            <div class="screen-content-top">
+                Leve em consideração se o vendedor cumpriu com as condições ofertadas no lance vencedor.
+            </div>  
+            <form name="form-avaliar-vendedor">
+                <div class="form-top">
+                    <div class="row">                    
+                        <div class="col col-15 left">
+                            <img src="img/local.png"/>                         
+                        </div>
+                        <div class="col col-90">
+                            <strong>CONCESSIONÁRIA</strong>
+                            <p>Av. das Américas, 1100 - Barra da Tijuca Rio de Janeiro, RJ</p>
+                        </div>
+                        <input type="hidden"/>
+                    </div>
+                    <div class="row">                    
+                        <div class="col col-15 right">
+                            <img src="img/shape.png"/>                         
+                        </div>
+                        <div class="col col-90">
+                            <strong>VENDEDOR</strong>
+                            <p> Zé das Couves</p>
+                        </div>
+                        <input type="hidden"/>
+                    </div>
+                </div>
+                <div class="form-content row">
+                    <div class="col col-30 left">
+                        <span>Péssimo</span>
+                    </div>
+                    <div class="col col-40 center">
+                        <ul>
+                            <li class="active"><span></span></li>
+                            <li class="active"><span></span></li>
+                            <li class="active"><span></span></li>
+                            <li class="active"><span></span></li>
+                            <li><span></span></li>
+                        </ul>
+                    </div>
+                    <div class="col col-30 right">
+                        <span>Excelente</span>
+                    </div>
+                    <input type="hidden"/>
+                </div>   
+
+                <div class="form-bottom">
+                    <label>DEIXE AQUI OS SEUS COMENTÁRIOS</label>
+                    <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in mauris sit amet dolor ultricies hendrerit quis a nibh. Ut non mi sit amet nisi scelerisque hendrerit non id urna. Morbi blandit sagittis magna nec tincidunt_</textarea>
+                </div>
+                <button class="button button-block button-balanced">AVALIAR</button>
+            </form>
+
+        </div>     
+    </ion-content>
+</ion-view>

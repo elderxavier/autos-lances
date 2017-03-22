@@ -1,0 +1,18 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "ionic-plugin-deploy": {
+            "PACKAGE_NAME": "com.autoslances.app"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.autoslances.app"
+        }
+    },
+    "dependent_plugins": {}
+}

@@ -1,0 +1,40 @@
+<ion-view view-title="Cadastrar Nova Senha" class="login-user" id="novasenha">
+    <ion-nav-bar class="bar-positive" align-title="center">
+        <ion-nav-buttons side="left">
+            <button  menu-close class="button button-icon button-clear ion-android-arrow-back"  ng-click="backHistory()">
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="animate-fade-slide-in">
+        <div class="bg-img-top-car">
+            <h3 class="alter-title">Esqueci a minha senha</h3>
+        </div>          
+        <div class="screen-content padding">
+            <div class="content-top">
+                <div class="modal-body">
+                    <p><i class="icon ion-alert-circled"></i>Seu e-mail é</p>
+                    <span><strong>email@servidordeemail.com.br</strong></span>
+                </div>
+            </div>
+            <div class="content-center">
+                <div class="list row responsive-sm login-form">
+                    <div class="row">
+                        <label class="item col col-50 item-input item-stacked-label senha">                        
+                            <input type="password" placeholder="DIGITE UMA NOVA SENHA*" required>
+                            <span class="input-label">NOVA SENHA*</span>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label class="item col col-50 item-input item-stacked-label">                        
+                            <input type="password" placeholder="REPITA A NOVA SENHA*" required>
+                            <span class="input-label">REPITA A NOVA SENHA*</span>
+                        </label>
+                    </div>
+                </div>                
+            </div>
+            <div class="content-bottom">
+                <button ui-sref="app.login" class="button button-full button-balanced">CADASTRAR SENHA</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

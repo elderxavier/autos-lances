@@ -1,0 +1,84 @@
+<ion-view view-title="Meus leiloes" align-title="center" class="meus-leiloes-l9-andamento">    
+    <ion-content overflow-scroll="true">
+        <div class="view-top-bar">
+            <div class="row top-button">
+                <button class="button button-clear col col-50 activate">Em andamento</button>
+                <button class="button button-clear col col-50" ui-sref="app.vendedor-meus-leiloes-l9-encerrado">Encerrados</button>
+            </div>
+        </div>
+        <div class="screen-content">
+            <div class="content-top">
+                <div class="row">
+                    <div class="col col-50 left">
+                        <h3>PLANO PRO 1</h3>
+                    </div>
+                    <div class="col col-50 right">
+                        <div class="btn-round bg-positive" ng-click="showItensL9()"><span>+</span></div>
+                    </div>
+                </div>
+                <div class="itens">
+                    <div class="row first">
+                        <div class="col col-80">
+                            <p>Total em andamento</p>
+                        </div>
+                        <div class="col col-20">
+                            <span>12</span>
+                        </div>
+                    </div>
+                    <div class="row center">
+                        <div class="col col-80">
+                            <p>Total em leilões encerrados</p>
+                        </div>
+                        <div class="col col-20">
+                            <span>05</span>
+                        </div>
+                    </div>
+                    <div class="row last">
+                        <div class="col col-80">
+                            <p>Saldo de leilões</p>
+                        </div>
+                        <div class="col col-20">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-center">
+                <div class="row">
+                    <div class="row slide">
+                        <button class="button icon-left col col-10 button-clear positive"> < </button>
+                        <div class="itens col col-50 zerokm active">
+                            <p>ZERO KM</p>
+                            <p>98 LANCES DISPONÍVEIS</p>
+                        </div>
+                        <div class="itens col col-50 seminovos">
+                            <p>SEMINOVOS</p>
+                            <p>98 LANCES DISPONÍVEIS</p>
+                        </div> 
+                        <button class="button icon-right col col col-10 button-clear positive"> > </button>
+                    </div>                    
+                </div>
+            </div>
+            <div class="content-bottom">
+                <div class="row">                    
+                    <div class="col col-50 left">
+                        <div class="styled-select col bg-positive rounded">
+                            <select>
+                                <option value="filtrar">Filtrar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col col-50 right">
+                        <div class="styled-select col bg-positive rounded">
+                            <select>
+                                <option value="ordenar">Ordenar</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>                
+                <div ng-include="'templates/vendedor/leilao/tabs/andamento/zerokm.html'" class="content-zerokm subpage active"></div>
+                <div ng-include="'templates/vendedor/leilao/tabs/andamento/seminovos.html'" class="content-seminovos subpage"></div>
+            </div>                        
+        </div>        
+    </ion-content>
+</ion-view>

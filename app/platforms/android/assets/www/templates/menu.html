@@ -1,0 +1,55 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content class="topomenu">
+        <ion-nav-bar class="bar-assertive-900 menu-auto" align-title="center">
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear icon ion-navicon-round" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" ng-class="{expanded: isExpanded}" class="topomenu"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-content class="stable-bg">
+            <div>
+                <img width="100%" src="img/topo_menulateral.png">
+            </div>
+            <ion-list>                
+                <div id="menu-container">
+                    <div class="menu-container-comprador container" ng-show="userlogincontainer">
+                        <ion-item nav-clear menu-close ui-sref="app.home"><img src="img/icn_home.png" width="16px"></img>Home</ion-item>
+                        <ion-item nav-clear menu-close ng-show="userlogin" ui-sref="app.meusleiloes"><img src="img/leilao.png" width="16px"></img>Meus Leilões</ion-item>
+                        <ion-item nav-clear menu-close ng-show="userlogin" ui-sref="app.minhaconta"><img src="img/peso.png" width="16px"></img>Minha Conta</ion-item>
+                        <ion-item nav-clear menu-close ng-show="userlogin" ui-sref="app.escolhercarro"><img src="img/pessoalmenu.png" width="16px"></img>Quero Comprar</ion-item>
+                        <ion-item nav-clear menu-close ui-sref="app.comodidade"><img src="img/icn_comodidades.png" width="16px"></img> Comodidade</ion-item>
+                    </div>
+                    <div class="menu-container-vendedor container" ng-show="salelogincontainer">                        
+                        <ion-item nav-clear menu-close ui-sref="app.home-l2"><img src="img/icn_home.png" width="16px"></img>Home</ion-item>
+                        <ion-item nav-clear menu-close ng-show="salelogin" ui-sref="app.leiloes-disponiveis-l6-seminovos"><img src="img/menu-cart.png" width="16px"></img>Leilões Disponiveis<i class="push-menu">18</i></ion-item>
+                        <ion-item nav-clear menu-close ng-show="salelogin" ui-sref="app.vendedor-meus-leiloes-l9-andamento"><img src="img/leilao.png" width="16px"></img>Meus Leilões<i class="push-menu">07</i></ion-item>
+                        <ion-item nav-clear menu-close ng-show="salelogin" ui-sref="app.vendedor-minha-conta-vendedor-pj-l12"><img src="img/confi.png" width="16px"></img>Minha Conta</ion-item>
+                        <ion-item nav-clear menu-close ng-show="salelogin" ui-sref="app.home-l2"><img src="img/menu-pacotes.png" width="16px"></img>Pacotes Extras</ion-item>
+                        <ion-item nav-clear menu-close ui-sref="app.planos-tradicionais-l4"><img src="img/menu-planos.png" width="16px"></img> Planos</ion-item>
+                    </div>
+                </div>
+            </ion-list>
+            <div class="row responsive-sm" ng-show="!userlogin && userlogincontainer" style="position: fixed;bottom:10px;clear:both;">
+                <button menu-close ui-sref="app.login" class="button col button-block button-calm">Login</button>
+                <button menu-close ui-sref="app.login" style="margin-top:10px;" class="button button-block button-balanced">Cadastre-se</button>
+            </div>
+            <ion-footer-bar align-title="center" ng-show="userlogin && userlogincontainer">
+                <div class="row" style="margin:0px;padding:0px;">
+                    <button class="button button-full button-calm" ng-click="logout()">SAIR</button>
+                </div>               
+            </ion-footer-bar>
+            <div class="row responsive-sm" ng-show="!salelogin && salelogincontainer" style="position: fixed;bottom:10px;clear:both;">
+                <button menu-close ui-sref="app.vendedor-login" class="button col button-block button-calm">Login</button>
+                <button menu-close ui-sref="app.vendedor-cadastrar" style="margin-top:10px;" class="button button-block button-balanced">Cadastre-se</button>
+            </div>
+            <ion-footer-bar align-title="center" ng-show="salelogin && salelogincontainer">
+                <div class="row" style="margin:0px;padding:0px;">
+                    <button class="button button-full button-calm" ng-click="saleLogout()">SAIR</button>
+                </div>               
+            </ion-footer-bar>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

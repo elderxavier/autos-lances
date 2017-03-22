@@ -1,0 +1,19 @@
+<ion-view view-title="Meus Leilões">
+    <ion-nav-bar class="bar-assertive-900 menu-auto">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear icon ion-navicon-round" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right">
+            <svg style="background-color: white;fill: #00415f;margin-top: 0px;border-radius: 50%;position: relative;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="10px" width="30px" height="30px" viewBox="0 0 20 25" xml:space="preserve"><g transform="translate(-450 -1520)"><g xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="470,1538.586 460.808,1529.394 462.929,1527.272 458.686,1523.029 453.029,1528.686 457.272,1532.929     459.393,1530.808 468.586,1540   "/><rect x="461.222" y="1519.737" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -942.0895 773.1823)" width="2" height="8.001"/><rect x="452.736" y="1528.222" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -950.5751 769.6673)" width="2" height="8"/></g></g></svg>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-tabs class="tabs-positive meus-leiloes tabs-striped tabs-top tabs-background-calm">
+        <ion-tab title="Em Andamento" ui-sref="app.meusleiloes.andamento">
+            <ion-nav-view name="leilao-em-andamento"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Encerrados" ui-sref="app.meusleiloes.encerrado">
+            <ion-nav-view name="leilao-encerrado"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

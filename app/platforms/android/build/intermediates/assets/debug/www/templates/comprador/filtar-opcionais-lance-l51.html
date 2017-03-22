@@ -1,0 +1,133 @@
+<ion-view view-title="FILTRAR ACESSÓRIOS" class="comprador filtrar-opcionais">
+    <ion-nav-buttons side="left">
+        <button  menu-close class="button button-icon button-clear ion-android-arrow-back"  ng-click="backHistory()">
+        </button>
+    </ion-nav-buttons> 
+    <ion-content class="animate-fade-slide-in scroll-content ionic-scroll">        
+        <div class="view-top-bar">               
+            <div class="bg-img-top-car2">
+                <h3 class="title">Ford Fusion Vermelho</h3>
+                <div class="row">                    
+                    <div class="col col-33">
+                        <div class="chip-al chip-al-s padding-horizontal ">
+                            <span class="bg-balanced"></span>Leilão ativo
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-67">
+                        <p><strong>2013</strong> a <strong>2016</strong> até <strong>15.000</strong> km</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen-content custom_modal">
+            <div class="row">
+                <div class="col col-50 info-leilao-contador">
+                    <div class="row">
+                        <div class="chip-al-g chip-al padding-horizontal">32</div>
+                    </div>
+                    <div class="row">
+                        <p>Lances Recebidos</p>
+                    </div>
+                </div>
+                <div class="col col-50 values-filter">
+                    <div class="row">
+                        <p>de <span>R$ 49.000,00</span></p>
+                    </div>
+                    <div class="row">
+                        <p>a <span>R$ 56.000,00</span></p>
+                    </div>
+                </div>
+            </div>
+            <form name="form-comprador-filtrar">
+                <h3>Opcionais que solicitei</h3>                     
+                <ul class="checkbox">
+                    <li>
+                        <div class="row">
+                            <input type="checkbox" name="opcionais1"/>
+                            <label for="opcionais1">Ar condicionado</label>
+                            <div class="chip right">
+                                <span>4</span>                           
+                            </div>
+                        </div> 
+                    <li>
+                        <div class="row">
+                            <input type="checkbox" name="opcionais1"/>
+                            <label for="opcionais1">Direção hidráulica / elétrica</label>
+                            <div class="chip right">
+                                <span>2</span>                           
+                            </div>
+                        </div>
+                    </li>
+                    <li>                
+                        <div class="row">
+                            <input type="checkbox" name="opcionais1"/>
+                            <label for="opcionais1">Bancos de couro</label>
+                            <div class="chip right">
+                                <span>4</span>                           
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <input type="checkbox" name="opcionais1"/>
+                            <label for="opcionais1">Rodas de liga</label>
+                            <div class="chip right">
+                                <span>6</span>                           
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <input type="checkbox" name="opcionais1"/>
+                            <label for="opcionais1">Tanque cheio</label>
+                            <div class="chip right">
+                                <span>15</span>                           
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <input type="checkbox" name="opcionais1"/>
+                            <label for="opcionais1">IPVA 2016 pago</label>
+                            <div class="chip right">
+                                <span>22</span>                           
+                            </div>
+                        </div>              
+                    </li>
+                </ul>                    
+                <h3>Acrescentados pelo Vendedor</h3>                     
+                <ul class="checkbox">
+                    <li>
+                        <div class="row">
+                            <input type="checkbox" name="opcionais1"/>
+                            <label for="opcionais1">Travas elétricas</label>
+                            <div class="chip right">
+                                <span>4</span>                           
+                            </div>
+                        </div> 
+                    <li>
+                        <div class="row">
+                            <input type="checkbox" name="opcionais1"/>
+                            <label for="opcionais1">Protetor de cárter</label>
+                            <div class="chip right">
+                                <span>6</span>                           
+                            </div>
+                        </div>
+                    </li>
+                    <li>                
+                        <div class="row">
+                            <input type="checkbox" name="opcionais1"/>
+                            <label for="opcionais1">Rack no teto</label>
+                            <div class="chip right">
+                                <span>15</span>                           
+                            </div>
+                        </div>
+                    </li>                        
+                </ul>
+                <button class="button button-block button-balanced"ui-sref="app.listarleilaocomprador">Salvar</button>
+            </form>
+        </div>        
+    </ion-content>
+</ion-view>

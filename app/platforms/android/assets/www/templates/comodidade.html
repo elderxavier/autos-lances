@@ -1,0 +1,49 @@
+<ion-view view-title="Comodidades" id="comodidade">
+    <ion-content overflow-scroll=true class="animate-fade-slide-in comodidades">
+        <div class="header-top-view" style="background:url(img/comodidades.png) center bottom no-repeat;">
+        </div>
+        <div class="list card">
+            <div class="item item-body">                
+                <div class="list list-inset">
+                    <label class="item item-input">                        
+                        <input type="text" placeholder="BUSQUE POR UM PARCEIRO">
+                        <i class="icon ion-search placeholder-icon"></i>
+                    </label>
+                </div>                
+                <div class="styled-select col black rounded">
+                    <select>
+                        <option>Ou Selecione uma categoria</option>
+                        <option>Estética e Beleza</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item item-divider">
+                <img ng-src="img/nologo.png"/>
+            </div>
+            <div class="item item-text-wrap">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod consequat cursus. Sed porttitor tincidunt tincidunt. </p>    
+                <h3>ATÉ 70% OFF!</h3>    
+                <div class="bar bar-footer row">
+                    <span class="button button-clear stable col col-50">Esgota em <strong>90</strong> dias</span>
+                    <button class="button icon-right ion-checkmark button-clear balanced col col-50" ng-click="modal_marca.hide()">Ver Oferta</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="item item-divider">
+                <img ng-src="img/nologo.png"/>
+            </div>
+            <div class="item item-text-wrap">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod consequat cursus. Sed porttitor tincidunt tincidunt. </p>    
+                <h3>DESCONTO DE R$ 50,00</h3>    
+                <div class="bar bar-footer row">
+                    <span class="button button-clear stable col col-50">Esgota em <strong>90</strong> dias</span>
+                    <button class="button icon-right ion-checkmark button-clear balanced col col-50" ng-click="modal_marca.hide()">Ver Oferta</button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+<ion-view view-title="Leilões disponíveis" class="vendedor-leiloes">      
+    <ion-tabs class="tabs-positive tab-cadastrar">         
+        <ion-tab title="Em Andamento" ui-sref="app.leiloes-disponiveis-l6-seminovos" align-title="center">
+            <ion-nav-view  name="leilao-em-andamento"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Login" ui-sref="app.vendedor-meus-leiloes-l9-encerrado" ui-sref="app.leiloes-disponiveis-l6-zerokm"align-title="center">
+            <ion-nav-view  name="leilao-em-ancerrado"></ion-nav-view>
+        </ion-tab>
+        <ion-content class="animate-fade-slide-in"  ng-controller="CadastroVendedorCtrl">  
+    </ion-tabs>    
+</ion-view> 

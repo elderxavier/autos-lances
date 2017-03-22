@@ -1,0 +1,104 @@
+zero<ion-view view-title="Escolha o seu carro">
+    <ion-nav-title class="page-nunber">
+        <h1 align-title="left">Escolha o seu carro<span>1<i> de </i>2</span></h1>        
+    </ion-nav-title>
+    <ion-content overflow-scroll=true class="escolha-carro">
+        <div class="checkbox">
+            <div class="row">
+                <div class="col">
+                    <input type="checkbox" checked="checked" id="zerokm" />
+                    <label for="checkbox">Zero Km</label>
+                </div>
+                <div class="col">
+                    <input type="checkbox" id="seminovo" />
+                    <label for="checkbox">Semi-Novo</label>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item item-icon-left item-icon-right item-marca">
+                <i class="icon ion-android-bookmark" ng-click="openModalMarca()"></i> <p ng-click="openModalMarca()">Marca</p>
+                <div class="chip right hidden">
+                    <span></span>
+                    <i class="close material-icons">+</i>
+                </div>
+                <i class="icon ion-android-arrow-forward" ng-click="openModalMarca()"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right item-modelo" ng-click="openModalModelo()">
+                <i class="icon ion-model-s" ng-click="openModalModelo()"></i> <p>Modelo</p>
+                <div class="chip right hidden">
+                    <span></span>
+                    <i class="close material-icons">+</i>
+                </div>
+                <i class="icon ion-android-arrow-forward"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right item-ano" ng-click="openModalAno()">
+                <i class="icon ion-ios-calendar-outline"  ng-click="openModalAno()"></i> <p>Ano</p>
+                <div class="chip right hidden" target="ano-modal">
+                    <span></span>
+                    <i class="close">+</i>
+                </div>
+                <i class="icon ion-android-arrow-forward"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right item-versao" ng-click="openModalVersao()"> 
+                <i class="icon ion-merge" ng-click="openModalVersao()"></i> <p>Versão</p>
+                <div class="chip right hidden" target="versao-modal">
+                    <span></span>
+                    <i class="close">+</i>
+                </div>
+                <i class="icon ion-android-arrow-forward"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right item-km"ng-click="openModalKm()"> 
+                <i class="icon ion-speedometer"ng-click="openModalKm()"></i> <p>Quilometragem</p>
+                <div class="chip right hidden" target="km-modal">
+                    <span></span>
+                    <i class="close">+</i>
+                </div>
+                <i class="icon ion-android-arrow-forward"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right item-cambio" ng-click="openModalCambio()"> 
+                <i class="icon icons-itens fa-cambio"ng-click="openModalCambio()"></i> <p>Câmbio</p>
+                <div class="chip right hidden" target="cambio-modal">
+                    <span></span>
+                    <i class="close">+</i>
+                </div>
+                <i class="icon ion-android-arrow-forward"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right item-cor" ng-click="openModalCor()"> 
+                <i class="icon ion-android-color-palette" ng-click="openModalCor()"> </i> <p>Cor de Preferência</p>
+                <div class="chip right hidden" target="cor-modal">
+                    <span></span>
+                    <i class="close">+</i>
+                </div>
+                <i class="icon ion-android-arrow-forward"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right item-opcionais" ng-click="openModalOpcionais()">
+                <p class="p-opcionais"> <i class="icon ion-ios-gear"></i> <span>Opcionais</span></p>
+                <div class="chip right hidden" target="opcionais-modal">
+                    <span></span>
+                    <i class="close">+</i>
+                </div>
+                <i class="icon ion-android-arrow-forward"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right item-estado"ng-click="openModalEstado()">
+                <i class="icon ion-location"></i> <p>Estado</p>
+                <div class="chip right hidden" target="cidade-modal">
+                    <span></span>
+                    <i class="close">+</i>
+                </div>
+                <i class="icon ion-android-arrow-forward"></i>
+            </div>
+            <div class="item item-icon-left item-icon-right item-cidade"ng-click="openModalCidade()">
+                <i class="icon icons-itens fa-parte"></i> <p>Cidade</p> 
+                <div class="chip right hidden" target="cidade-modal">
+                    <span></span>
+                    <i class="close">+</i>
+                </div>
+                <i class="icon ion-android-arrow-forward"></i>
+            </div>
+            <div class="padding">
+                <button ui-sref="app.escolhercarrodetalhes" class="button button-block button-balanced">Avançar</button>
+            </div>            
+        </div>
+    </ion-content>
+</ion-view>

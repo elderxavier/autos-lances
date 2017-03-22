@@ -1,0 +1,90 @@
+<ion-view view-title="Logar / Cadastrar" class="login-user" id="NovaSenhaCtrl">
+    <ion-nav-back-button></ion-nav-back-button>
+    <ion-content overflow-scroll=true>
+        <div class="header-top-view" style="background:url(img/008.png) center bottom no-repeat;">
+            <h1>Crie já o seu Leilão!</h1>
+        </div>
+        <div class="row">
+            <button class="button icon-left ion-social-facebook button-block button-facebook" ng-click="login()">Entrar via Facebook</button>
+        </div>
+        <div class="row">
+            <h5><span>ou</span></h5>  
+        </div>
+        <div class="row responsive-sm">
+            <h2 class="col positive">Logar</h2>
+            <div class="list col login-form">
+                <div class="row">
+                    <label class="item col item-input item-stacked-label">                        
+                        <input type="text" placeholder="E-MAIL*" required>
+                        <span class="input-label">E-MAIL*</span>
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="item col col-50 item-input item-stacked-label senha">                        
+                        <input type="password" placeholder="SENHA*" required>
+                        <span class="input-label">SENHA*</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <a class="link" ui-sref="app.esquecisenha">Esqueci a minha senha</a>
+            </div>
+            <div class="col">
+                <button style="margin-top:20px;" class="button button-block button-balanced" ng-click="login()">Entrar</button>
+            </div>
+        </div>
+        <div class="row">
+            <h5><span>ou</span></h5>  
+        </div>
+        <div class="row responsive-sm">
+            <h2 class="col positive">Cadastrar</h2>
+            <div class="list row responsive-sm login-form">
+                <div class="row">
+                    <label class="item col margin-right col-50 item-input item-stacked-label">                         
+                        <input type="text" placeholder="NOME*" required>
+                        <span class="input-label">NOME*</span>
+                    </label>
+                    <label class="item col  col-50 item-input item-stacked-label">                                                
+                        <input type="text" placeholder="SOBRENOME*" required>
+                        <span class="input-label">SOBRENOME*</span>                        
+                    </label>
+                </div>                
+                <div class="row">
+                    <label class="item col col-30 item-input item-stacked-label">                         
+                        <input type="text" placeholder="DDD*" required>
+                        <span class="input-label">DDD*</span>
+                    </label>
+                    <label class="item col col-70 item-input item-stacked-label">                          
+                        <input type="text" placeholder="TELEFONE*" required>
+                        <span class="input-label">TELEFONE*</span>
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="item col item-input item-stacked-label">                        
+                        <input type="text" placeholder="E-MAIL*" required>
+                        <span class="input-label">E-MAIL*</span>
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="item col col-50 item-input item-stacked-label senha">                        
+                        <input type="password" placeholder="SENHA*" required>
+                        <span class="input-label">SENHA*</span>
+                    </label>
+                </div>
+                <div class="row">
+                    <label class="item col col-50 item-input item-stacked-label">                        
+                        <input type="password" placeholder="CONFIRMAR SENHA*" required>
+                        <span class="input-label">CONFIRMAR SENHA*</span>
+                    </label>
+                </div>
+            </div>
+            <div class="col checkbox politica-pricacidade">
+                <input type="checkbox" id="zerokm" />
+                <p>Li e aceito os  <a class="link" ui-sref="app.politicaprivacidade" >TERMOS DE USO</a> e <a class="link" ui-sref="app.termouso">POLÍTICA DE <br>PRIVACIDADE</a></p>
+            </div>
+            <div class="col">
+                <button style="margin-top:20px;" class="button button-block button-balanced" ng-click="login()">Cadastrar</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

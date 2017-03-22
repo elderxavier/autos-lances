@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/media/elder/f6eba379-3e87-40ff-b195-3e498a0f805e/shared/Apps/82web/autos-lances/app/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="25.0.0"
+        sha1="a4405756cfdcaf9403dbdcc7c5d8b575e16d9459">
+        <dex dex="/media/elder/f6eba379-3e87-40ff-b195-3e498a0f805e/shared/Apps/82web/autos-lances/app/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_eed5d85b3f2b41a432db787c14e272f4223efb9b.jar" />
+    </item>
+
+</items>

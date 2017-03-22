@@ -1,0 +1,56 @@
+<ion-view view-title="Escolher carro" id="escolhercarrodetalhes" align-title="left"> 
+    <ion-nav-title class="page-nunber" side="primary">
+        <h1 align-title="left">Escolha o seu carro<span>2<i> de </i>2</span></h1>        
+    </ion-nav-title>    
+    <ion-content overflow-scroll=true class="animate-fade-slide-in">
+        <div class="header-top-view" style="background:url(img/topodetalheleilao.png) center bottom no-repeat;">
+        </div>
+        <div class="row responsive-sm">
+            <h2 class="col positive">Duração do Leilão</h2>
+            <div class="styled-select col black rounded">
+                <select>
+                    <option>TRÊS (3) DIAS</option>
+                </select>
+            </div>
+            <p class="col" style="margin: 0px;">O leilão se encerrará no dia <strong class="positive">03/06/2016</strong> às <strong class="positive">18:00hs</strong>. Após este período você poderá definir o ganhador.</p>
+            <h2 class="col positive">Preço Objetivo</h2>
+            <p class="col" style="margin: 0px;">O leilão se encerrará no dia 03/06/2016 às 18:00hs. Após este período você poderá definir o ganhador.</p>
+            <div class="list col login-form">
+                <label class="item item-input">
+                    <span class="input-label">Valor desejado R$</span>
+                    <input type="text" placeholder="58.100,00">
+                </label>
+            </div>
+            <div class="col checkbox">
+                <input type="checkbox" id="zerokm" />
+                <p style="margin-left:40px;">Pretendo dar o meu carro como parte do pagamento
+                </p>
+            </div>
+            <h2 class="col positive">Dicas Autos Lances</h2>
+            <div class="col table-fipe">
+                <div class="row header">
+                    <div class="col col-50">TABELA DE VALORES</div>
+                    <div class="col col-25">FIPE (R$)</div>
+                    <div class="col col-25">DICA (R$)</div>
+                </div>
+                <div class="row">
+                    <div class="col col-50">Preço mínimo</div>
+                    <div class="col col-25">58.500,00</div>
+                    <div class="col col-25">57.200,00</div>
+                </div>
+                <div class="row">
+                    <div class="col col-50">Preço médio</div>
+                    <div class="col col-25">59.500,00</div>
+                    <div class="col col-25">58.100,00</div>
+                </div>
+                <div class="row">
+                    <div class="col col-50">Preço máximo</div>
+                    <div class="col col-25">60.000,00</div>
+                    <div class="col col-25">59.200,00</div>
+                </div>
+            </div>
+            <div class="padding">
+                <button class="button button-block button-balanced" ng-click="escolheCarroDetahesNext()">Começar o Leilão!</button>
+            </div>
+    </ion-content>
+</ion-view>

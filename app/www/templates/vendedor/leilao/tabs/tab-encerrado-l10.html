@@ -1,0 +1,223 @@
+<ion-view view-title="Meus leiloes" align-title="center" class="meus-leiloes-l9-andamento" id="meus-leiloes-l9-encerrado">    
+    <ion-content overflow-scroll="true">
+        <div class="view-top-bar">
+            <div class="row top-button">
+                <button class="button button-clear col col-50" ui-sref="app.vendedor-meus-leiloes-l9-andamento">Em andamento</button>
+                <button class="button button-clear col col-50 activate">Encerrados</button>
+            </div>
+        </div>
+        <div class="screen-content">
+            <div class="content-top">
+                <div class="content-top-container">
+                    <div class="row border-t">
+                        <div class="col col-50 left">
+                            <h3>PLANO PRO 1</h3>
+                        </div>
+                        <div class="col col-50 right">
+                            <div class="btn-round bg-positive" ng-click="showItensL9()"><span>+</span></div>
+                        </div>
+                    </div>
+                    <div class="itens">
+                        <div class="row first">
+                            <div class="col col-80">
+                                <p>Total em andamento</p>
+                            </div>
+                            <div class="col col-20">
+                                <span>12</span>
+                            </div>
+                        </div>
+                        <div class="row center">
+                            <div class="col col-80">
+                                <p>Total em leilões encerrados</p>
+                            </div>
+                            <div class="col col-20">
+                                <span>05</span>
+                            </div>
+                        </div>
+                        <div class="row last">
+                            <div class="col col-80">
+                                <p>Saldo de leilões</p>
+                            </div>
+                            <div class="col col-20">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-center">
+                <div class="row">
+                    <div class="row slide">
+                        <div class="col col-50">
+                            <p>12 LEILOES ENCERRADOS</p>
+                        </div>
+                        <div class="col col-50 winner">
+                            <p>4 VENCIDOS <i class="icons-itens fa-winner"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-bottom">
+                <div class="row">                    
+                    <div class="col col-50 left">
+                        <div class="styled-select col bg-positive rounded">
+                            <select>
+                                <option value="filtrar">Filtrar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col col-50 right">
+                        <div class="styled-select col bg-positive rounded">
+                            <select>
+                                <option value="ordenar">Ordenar</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>                
+                <div class="content-card">
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            <div class="row">
+                                <div class="col col-67">
+                                    <h2>Marca e Modelo</h2>
+                                </div>                                
+                            </div>
+                            <div class="row">
+                                <div class="col col-50">
+                                    <h3>Cor e Km</h3>
+                                </div>
+                                <div class="col col-50 winner">
+                                    <p> VENCIDO <i class="icons-itens fa-winner"></i></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="chip-al-g chip-al padding-horizontal">32</div>
+                                    </div>
+                                    <div class="row">
+                                        <p>Lances Recebidos</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="chip-al-g chip-al padding-horizontal">12/05/2016</div>
+                                    </div>
+                                    <div class="row">
+                                        <p>Encerrado em</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item">
+                            <div class="col col-33">
+                                <div class="chip-al chip-al-s padding-horizontal ">
+                                    <span class="assertive-bg"></span>Leilão Encerrado
+                                </div>
+                            </div>
+                            <div class="col col-67">
+                                <button class="button btn-confirm icon-right ion-checkmark button-clear balanced" ui-sref="app.vendedor-detalhes-leilao-ganho-L10-1">Detalhes</button>                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            <div class="row">
+                                <div class="col col-67">
+                                    <h2>VOLKSVAGEN VOYAGE</h2>
+                                </div>                                
+                            </div>
+                            <div class="row">
+                                <div class="col">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-50">
+                                    <h3>Vermelho, até 15.000 km</h3>
+                                </div>
+                                <div class="col col-50 winner">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="chip-al-g chip-al padding-horizontal">32</div>
+                                    </div>
+                                    <div class="row">
+                                        <p>Lances Recebidos</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="chip-al-g chip-al padding-horizontal bg-balanced">05/04/2016</div>
+                                    </div>
+                                    <div class="row">
+                                        <p>Encerrado em</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row item">
+                            <div class="col col-33">
+                                <div class="chip-al chip-al-s padding-horizontal ">
+                                    <span class="assertive-bg"></span>Leilão Encerrado
+                                </div>
+                            </div>
+                            <div class="col col-67">
+                                <button class="button btn-confirm icon-right ion-checkmark button-clear balanced" ui-sref="app.vendedor-detalhes-leilao-encerrado-l10-2">Detalhes</button>                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="item item-text-wrap">
+                            <div class="row">
+                                <div class="col col-67">
+                                    <h2>RENAULT SANDERO</h2>
+                                </div>                               
+                            </div>                            
+                            <div class="row">
+                                <div class="col col-50">
+                                    <h3>Vermelho, até 15.000 km</h3>
+                                </div>
+                                <div class="col col-50 winner">
+                                    <p>VENCIDO <i class="icons-itens fa-winner"></i></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="chip-al-g chip-al padding-horizontal">32</div>
+                                    </div>
+                                    <div class="row">
+                                        <p>Lances Recebidos</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="chip-al-g chip-al padding-horizontal bg-balanced">02/04/2015</div>
+                                    </div>
+                                    <div class="row">
+                                        <p>Encerrado em</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row item">
+                            <div class="col col-33">
+                                <div class="chip-al chip-al-s padding-horizontal ">
+                                    <span class="assertive-bg"></span>Leilão Encerrado
+                                </div>
+                            </div>
+                            <div class="col col-67">
+                                <button class="button btn-confirm icon-right ion-checkmark button-clear balanced" ui-sref="app.vendedor-detalhes-leilao-ganho-L10-1">Detalhes</button>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+        </div>        
+    </ion-content>
+</ion-view>
